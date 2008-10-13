@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: PlaidAnnotations
+Bundle-SymbolicName: edu.cmu.cs.planno
+Bundle-Version: 1.0.0
+Export-Package: edu.cmu.cs.plural.annot
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Require-Bundle: edu.cmu.cs.crystal;bundle-version="3.3.1"
