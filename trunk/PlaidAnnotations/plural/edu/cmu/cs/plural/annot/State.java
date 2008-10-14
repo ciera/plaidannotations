@@ -31,8 +31,8 @@ package edu.cmu.cs.plural.annot;
  * states and the state invariants that they have.
  * 
  * @author Nels Beckman
- * @date Feb 22, 2008
- *
+ * @since Feb 22, 2008
+ * @see ClassStates
  */
 public @interface State {
 

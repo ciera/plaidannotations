@@ -35,11 +35,11 @@ import java.lang.annotation.Target;
  * fields of the class they describe.
  * 
  * I know that at some point I am going to have to integrate this with KB's
- * @States considering it does the declaration part of this annotation, and
+ * {@link States} considering it does the declaration part of this annotation, and
  * that's actually what I wanted to call my annotation.
  * 
  * @author Nels Beckman
- * @date Feb 22, 2008
+ * @since Feb 22, 2008
  *
  */
 @Target(ElementType.TYPE)

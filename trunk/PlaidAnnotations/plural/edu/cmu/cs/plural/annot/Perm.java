@@ -44,7 +44,7 @@ import java.lang.annotation.Target;
  * @see edu.cmu.cs.plural.annot.State For language grammar.
  * 
  * @author Nels Beckman
- * @date Apr 2, 2008
+ * @since Apr 2, 2008
  *
  */
 @Target({ElementType.METHOD, ElementType.CONSTRUCTOR})
