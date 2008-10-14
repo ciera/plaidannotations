@@ -37,7 +37,6 @@ import java.lang.annotation.Target;
  * @author Kevin Bierhoff
  * @since 4/05/2008
  * @see TrueIndicates To define the <code>true</code> outcome.
- * @see Indicates To define non-<code>boolean</code> dynamic state tests.
  */
 @Target({ElementType.METHOD, ElementType.PARAMETER})
 public @interface FalseIndicates {

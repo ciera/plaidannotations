@@ -43,8 +43,8 @@ import java.lang.annotation.Target;
  * 
  * @author Kevin Bierhoff
  * @since 6/03/2008
- * @see StringBuffer#append(String) An example for annotating 
- * the receiver with this annotation
+ * @see StringBuffer#append(String) A method where the receiver
+ * could be annotated with this annotation
  */
 @Target({ElementType.METHOD, ElementType.PARAMETER})
 public @interface IsResult {
