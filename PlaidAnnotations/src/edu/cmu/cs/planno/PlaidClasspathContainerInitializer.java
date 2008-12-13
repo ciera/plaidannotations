@@ -102,7 +102,7 @@ public class PlaidClasspathContainerInitializer extends
 		return Path.fromOSString(fullPath);
 	}
 	
-	private static IClasspathEntry getPlaidAnnotationsLibraryEntry() {
+	public static IClasspathEntry getPlaidAnnotationsLibraryEntry() {
 		Bundle bundle = getBundle(PLANNO_PLUGIN_ID);
 		IPath bundle_loc = getBundleLocation(bundle);
 		
@@ -117,7 +117,6 @@ public class PlaidClasspathContainerInitializer extends
 //		String javadocLocation = null;
 		
 //		IClasspathAttribute[] attributes= { JavaCore.newClasspathAttribute(IClasspathAttribute.JAVADOC_LOCATION_ATTRIBUTE_NAME, javadocLocation) };
-		
 		return JavaCore.newLibraryEntry(jar_loc, src_loc, null, 
 				new IAccessRule[] {}, new IClasspathAttribute[] {}, false);
 	}

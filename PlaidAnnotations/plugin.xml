@@ -16,5 +16,13 @@
             name="Plaid Annotations">
       </classpathContainerPage>
    </extension>
+   <extension
+         point="org.eclipse.jdt.ui.classpathFixProcessors">
+      <classpathFixProcessor
+            class="edu.cmu.cs.planno.PlaidClasspathFix"
+            id="edu.cmu.cs.planno.plaidClasspathFix"
+            name="Plaid Annotations Classpath Fix">
+      </classpathFixProcessor>
+   </extension>
 
 </plugin>

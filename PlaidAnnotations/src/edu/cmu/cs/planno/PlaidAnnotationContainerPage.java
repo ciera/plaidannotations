@@ -30,14 +30,19 @@ import org.eclipse.core.runtime.IPath;
 import org.eclipse.jdt.core.IClasspathEntry;
 import org.eclipse.jdt.core.IJavaProject;
 import org.eclipse.jdt.core.JavaCore;
+
+import org.eclipse.jdt.internal.ui.JavaPluginImages;
+
+import org.eclipse.jdt.ui.ISharedImages;
+import org.eclipse.jdt.ui.JavaUI;
 import org.eclipse.jdt.ui.wizards.IClasspathContainerPage;
 import org.eclipse.jdt.ui.wizards.IClasspathContainerPageExtension;
+import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.jface.wizard.WizardPage;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Composite;
-
 /**
  * This wizard currently does nothing at all except generate the classpath
  * container string that will be added to a project's .classpath file. Once
@@ -56,7 +61,8 @@ public class PlaidAnnotationContainerPage extends WizardPage
      * Default Constructor - sets title, page name, description
      */
     public PlaidAnnotationContainerPage() {
-        super("Add Plaid Annotations", "Add Plaid Annotations Wizard", null);
+        super("Add Plaid Annotations", "Add Plaid Annotations Wizard", 
+        		ImageDescriptor.createFromImage(JavaUI.getSharedImages().getImage(ISharedImages.IMG_OBJS_LIBRARY)));
         setDescription("This wizard will help to add the Plaid annotations to your classpath.");
         setPageComplete(true);
     }
