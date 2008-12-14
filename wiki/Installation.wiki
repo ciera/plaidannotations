@@ -5,7 +5,7 @@
 http://plaidannotations.googlecode.com/svn/trunk/PlaidAnnotationsUpdateSite/
 
 = Introduction =
-In order to make the PLAID annotations as easy to use as possible, we have packaged the PLAID annotations as an Eclipse plugin. This makes it so that you can easily add the PLAID annotations as a "Library" to your Java project (similar to how JUnit4 annotations work). It also enables us to provide Eclipse QuickFix suggestions if you attempt to use any of the PLAID annotations. 
+In order to make the PLAID annotations as easy to use as possible, we have packaged the PLAID annotations as an Eclipse plugin. This makes it so that you can easily add the PLAID annotations as a "Library" to your Java project (similar to how JUnit4 annotations work). It also enables us to provide Eclipse !QuickFix suggestions if you attempt to use any of the PLAID annotations. 
 
 However, most plugins that actually use the PLAID annotations will already depend on the PLAID annotation project either directly or indirectly, and so you won't normally have to download the PLAID annotations plugin manually. Nonetheless, here are the three ways you can install the PLAID annotations, in order from most to least preferable:
 
