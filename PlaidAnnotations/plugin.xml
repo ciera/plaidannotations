@@ -24,5 +24,13 @@
             name="Plaid Annotations Classpath Fix">
       </classpathFixProcessor>
    </extension>
+   <extension
+         point="org.eclipse.jdt.ui.quickFixProcessors">
+      <quickFixProcessor
+            class="edu.cmu.cs.planno.PlaidQuickFixProcessor"
+            id="edu.cmu.cs.planno.pladQuickFixProcessor"
+            name="Plaid Annotations QuickFix">
+      </quickFixProcessor>
+   </extension>
 
 </plugin>
