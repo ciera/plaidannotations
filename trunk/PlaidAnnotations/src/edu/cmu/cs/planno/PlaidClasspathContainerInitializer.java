@@ -112,7 +112,7 @@ public class PlaidClasspathContainerInitializer extends
 		// put the location here.
 		// But it seems like it's not necessary as long as you include
 		// the source in the JAR file.
-		IPath src_loc = null;
+		IPath src_loc = bundle_loc;
 		
 		// When I want to link with Java doc (WHICH WE SHOULD DO)
 		// But it seems like it's not necessary as long as you include
