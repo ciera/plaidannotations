@@ -108,20 +108,9 @@ public class PlaidClasspathContainerInitializer extends
 		
 		IPath jar_loc = bundle_loc.append(PLANNO_JAR_NAME);
 		
-		// When I want to link with source (WHICH WE SHOULD DO)
-		// put the location here.
-		// But it seems like it's not necessary as long as you include
-		// the source in the JAR file.
-		IPath src_loc = bundle_loc;
-		
-		// When I want to link with Java doc (WHICH WE SHOULD DO)
-		// But it seems like it's not necessary as long as you include
-		// the source in the JAR file.
-		// put the location here.
-//		String javadocLocation = null;
-		
-//		IClasspathAttribute[] attributes= { JavaCore.newClasspathAttribute(IClasspathAttribute.JAVADOC_LOCATION_ATTRIBUTE_NAME, javadocLocation) };
-		return JavaCore.newLibraryEntry(jar_loc, src_loc, null, 
+		// This code assumes that the jar file we have put into the project
+		// also contains all of the source in a parallel directory.
+		return JavaCore.newLibraryEntry(jar_loc, jar_loc, null, 
 				new IAccessRule[] {}, new IClasspathAttribute[] {}, false);
 	}
 }
