@@ -10,6 +10,5 @@ In order to make the PLAID annotations as easy to use as possible, we have packa
 However, most plugins that actually use the PLAID annotations will already depend on the PLAID annotation project either directly or indirectly, and so you won't normally have to download the PLAID annotations plugin manually. Nonetheless, here are the three ways you can install the PLAID annotations, in order from most to least preferable:
 
 = Details =
-  * *Allow Another Plugin to Automatically Download PLAID Annotations:* If you are installing [http://code.google.com/p/crystalsaf/ Crystal] or [http://code.google.com/p/pluralism/ Plural] from their respective update sites, the PLAID annotations plugin will be installed automatically.
   * *Install from Update Site:* You can manually install the PLAID annotations plugin from its Eclipse update site: http://plaidannotations.googlecode.com/svn/trunk/PlaidAnnotationsUpdateSite/
   * *Use the Jar:* If you don't want to use the PLAID annotations as a plugin, you can just stick the Jar file itself somewhere in your program's build/class path. Download it [http://code.google.com/p/plaidannotations/downloads/list here].
