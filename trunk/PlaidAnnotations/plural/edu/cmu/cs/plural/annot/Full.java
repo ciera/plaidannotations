@@ -61,9 +61,37 @@ public @interface Full {
 	boolean returned() default true;
 	
 	/**
+	 * Indicates whether this permission will be used to make 
+	 * dynamically dispatched calls (default), access fields,
+	 * or both (only choose this option where necessary, as detailed below).
+	 * 
+	 * For method callers, this distinction is irrelevant when dynamic
+	 * dispatch is used: the caller can only use permissions that that allow
+	 * <i>it</i> to perform dispatch 
+	 * ({@link Use#DISPATCH} or {@link Use#DISP_FIELDS}).  
+	 * (Dynamic dispatch allows coercing dispatch-only permissions into
+	 * permissions that grant field access.)
+	 * When callers use static dispatch, on the other hand--i.e., 
+	 * <b>super</b> calls and calls to <b>private</b> methods--then
+	 * the required permissions must be matched by the caller.
+	 *   
+	 * Permissions that allow both dispatch and field access should only be used
+	 * if they are really both needed:
+	 * <ul>
+	 * <li>Methods with {@link Use#FIELDS fields-only} receiver
+	 * permissions are easier to call from subclasses.
+	 * <li>Methods with {@link Use#DISPATCH dispatch-only} receiver
+	 * permissions do not impose any restrictions on subclasses.
+	 * </ul>
+	 * Usually only receiver permissions 
+	 */
+	Use use() default Use.DISPATCH;
+	
+	/**
 	 * Indicates whether this permission can be used to access fields
 	 * or to make virtual method calls (default).
 	 */
+	@Deprecated
 	boolean fieldAccess() default false;
 	
 	/**
