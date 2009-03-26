@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2006-2009 by Carnegie Mellon University and others.
  * All rights reserved.
  *
