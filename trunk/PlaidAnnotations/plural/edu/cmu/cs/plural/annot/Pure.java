@@ -83,13 +83,15 @@ public @interface Pure {
 	 * <li>Methods with {@link Use#DISPATCH dispatch-only} receiver
 	 * permissions do not impose any restrictions on subclasses.
 	 * </ul>
-	 * Usually only receiver permissions 
+	 * Usually only receiver permissions should declare a use other than {@link Use#DISPATCH}.
+	 * @since PlaidAnnotations 1.0.3
 	 */
 	Use use() default Use.DISPATCH;
 	
 	/**
 	 * Indicates whether this permission can be used to access fields
 	 * or to make virtual method calls (default).
+	 * @deprecated Set {@link #use()} to {@link Use#FIELDS} instead setting this flag to <code>true</code> 
 	 */
 	@Deprecated
 	boolean fieldAccess() default false;
