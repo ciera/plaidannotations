@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2006-2009 by Carnegie Mellon University and others.
+ * Copyright (c) 2006-2008 by Carnegie Mellon University and others.
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -24,39 +24,21 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package edu.cmu.cs.plural.annot;
 
 /**
- * This enumeration distinguishes the allowed uses of a permission:
+ * This package contains annotations used by the 
+ * <a href="http://code.google.com/p/crystalsaf/">Crystal Static Analysis Framework</a>
+ * that facilitate writing and testing Java analyses written based on Crystal.
+ * 
  * <ul>
- * <li>Dynamic dispatch (only): {@link #DISPATCH}
- * <li>Field access (only): {@link #FIELDS}
- * <li>Both: {@link #DISP_FIELDS}
+ * <li>{@link edu.cmu.cs.crystal.annotations.MultiAnnotation} allows living 
+ * more easily with  Java's restriction of one annotation of a given type per 
+ * annotated element.
+ * <li>{@link edu.cmu.cs.crystal.annotations.PassingTest}, 
+ * {@link edu.cmu.cs.crystal.annotations.FailingTest}, and
+ * {@link edu.cmu.cs.crystal.annotations.UseAnalyses} facilitate
+ * regression-testing analyses using Crystal's <code>AnnotatedTest</code>
+ * JUnit test driver.
  * </ul>
- * This is primarily interesting to distinguish receiver permissions of
- * instance methods; permissions for other objects are usually (implicitly)
- * dispatch-only.
- * All permissions can be passed into private methods since these are
- * statically dispatched.
- * @author Kevin Bierhoff
- * @since Mar 25, 2009
- * @see Unique
- * @see Full
- * @see Share
- * @see Imm
- * @see Pure
  */
-public enum Use {
-	/** Dispatch-only use allows dynamic dispatch <b>but no field access</b>. */
-	DISPATCH, 
-
-	/** Fields-only use allows field access <b>but no dynamic dispatch</b>. */
-	FIELDS,
-
-	/** 
-	 * Allows both dynamic dispatch and field access, but <b>if only one
-	 * or the other is needed then that should be preferred</b> over this
-	 * mode of use.
-	 */
-	DISP_FIELDS
-}
+package edu.cmu.cs.crystal.annotations;
