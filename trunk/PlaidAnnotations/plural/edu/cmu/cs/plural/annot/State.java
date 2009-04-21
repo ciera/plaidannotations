@@ -26,6 +26,8 @@
  */
 package edu.cmu.cs.plural.annot;
 
+import java.lang.annotation.Target;
+
 /**
  * Another prototype interface, this one allows us to declare individual
  * states and the state invariants that they have.
@@ -34,6 +36,7 @@ package edu.cmu.cs.plural.annot;
  * @since Feb 22, 2008
  * @see ClassStates
  */
+@Target({})
 public @interface State {
 
 	/**
