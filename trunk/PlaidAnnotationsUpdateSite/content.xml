@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?metadataRepository class='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1.0.0'?>
-<repository name='Plaid Annotations Repository' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
+<repository name='Plaid Annotations Repository' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1.0.0'>
   <properties size='2'>
     <property name='p2.compressed' value='false'/>
-    <property name='p2.timestamp' value='1238769426783'/>
+    <property name='p2.timestamp' value='1245071514949'/>
   </properties>
   <units size='11'>
     <unit id='PlaidAnnotations.feature.jar' version='1.0.3'>
@@ -101,7 +101,7 @@
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Require-Bundle: org.eclipse.jdt.core;bundle-version=&quot;3.4.2&quot;,org.eclipse.core.runtime;bundle-version=&quot;3.4.0&quot;,org.eclipse.core.resources;bundle-version=&quot;3.4.1&quot;,org.eclipse.jdt.ui;bundle-version=&quot;3.4.1&quot;,org.eclipse.jface;bundle-version=&quot;3.4.1&quot;,org.eclipse.ltk.core.refactoring;bundle-version=&quot;3.4.1&quot;,org.eclipse.ui;bundle-version=&quot;3.4.1&quot;,org.eclipse.ui.ide&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 1.0.2&#xA;Export-Package: edu.cmu.cs.crystal.annotations,edu.cmu.cs.plural.annot&#xA;Bundle-SymbolicName: edu.cmu.cs.planno;singleton:=true&#xA;Import-Package: org.eclipse.jface.text,org.eclipse.jface.text.contentassist,org.eclipse.ltk.ui.refactoring&#xA;Bundle-Name: PlaidAnnotations&#xA;Bundle-Vendor: Carnegie Mellon University&#xA;
+            Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Require-Bundle: org.eclipse.jdt.core;bundle-version=&quot;3.4.2&quot;,org.eclipse.core.runtime;bundle-version=&quot;3.4.0&quot;,org.eclipse.core.resources;bundle-version=&quot;3.4.1&quot;,org.eclipse.jdt.ui;bundle-version=&quot;3.4.1&quot;,org.eclipse.jface;bundle-version=&quot;3.4.1&quot;,org.eclipse.ltk.core.refactoring;bundle-version=&quot;3.4.1&quot;,org.eclipse.ui;bundle-version=&quot;3.4.1&quot;,org.eclipse.ui.ide&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 1.0.2&#xA;Export-Package: edu.cmu.cs.crystal.annotations,edu.cmu.cs.plural.annot&#xA;Bundle-SymbolicName: edu.cmu.cs.planno;singleton:=true&#xA;Import-Package: org.eclipse.jface.text,org.eclipse.jface.text.contentassist,org.eclipse.ltk.ui.refactoring&#xA;Bundle-Name: PlaidAnnotations&#xA;Bundle-Vendor: Carnegie Mellon University
           </instruction>
         </instructions>
       </touchpointData>
@@ -139,7 +139,7 @@
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Require-Bundle: org.eclipse.jdt.core;bundle-version=&quot;3.4.2&quot;,org.eclipse.core.runtime;bundle-version=&quot;3.4.0&quot;,org.eclipse.core.resources;bundle-version=&quot;3.4.1&quot;,org.eclipse.jdt.ui;bundle-version=&quot;3.4.1&quot;,org.eclipse.jface;bundle-version=&quot;3.4.1&quot;,org.eclipse.ltk.core.refactoring;bundle-version=&quot;3.4.1&quot;,org.eclipse.ui;bundle-version=&quot;3.4.1&quot;,org.eclipse.ui.ide&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 1.0.3&#xA;Export-Package: edu.cmu.cs.crystal.annotations,edu.cmu.cs.plural.annot&#xA;Bundle-SymbolicName: edu.cmu.cs.planno;singleton:=true&#xA;Import-Package: org.eclipse.jface.text,org.eclipse.jface.text.contentassist,org.eclipse.ltk.ui.refactoring&#xA;Bundle-Name: PlaidAnnotations&#xA;Bundle-Vendor: Carnegie Mellon University&#xA;
+            Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Require-Bundle: org.eclipse.jdt.core;bundle-version=&quot;3.4.2&quot;,org.eclipse.core.runtime;bundle-version=&quot;3.4.0&quot;,org.eclipse.core.resources;bundle-version=&quot;3.4.1&quot;,org.eclipse.jdt.ui;bundle-version=&quot;3.4.1&quot;,org.eclipse.jface;bundle-version=&quot;3.4.1&quot;,org.eclipse.ltk.core.refactoring;bundle-version=&quot;3.4.1&quot;,org.eclipse.ui;bundle-version=&quot;3.4.1&quot;,org.eclipse.ui.ide&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 1.0.3&#xA;Export-Package: edu.cmu.cs.crystal.annotations,edu.cmu.cs.plural.annot&#xA;Bundle-SymbolicName: edu.cmu.cs.planno;singleton:=true&#xA;Import-Package: org.eclipse.jface.text,org.eclipse.jface.text.contentassist,org.eclipse.ltk.ui.refactoring&#xA;Bundle-Name: PlaidAnnotations&#xA;Bundle-Vendor: Carnegie Mellon University
           </instruction>
         </instructions>
       </touchpointData>
