@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2006-2008 by Carnegie Mellon University and others.
+ * Copyright (c) 2006-2009 by Carnegie Mellon University and others.
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -34,12 +34,22 @@ package edu.cmu.cs.plural.annot;
  */
 public interface PluralAnalysis {
 	
+	/** Syntax checker */
 	public static final String SYNTAX = "PluralAnnotationAnalysis";
 	
+	/** Effect checker */
 	public static final String EFFECT = "EffectChecker";
 	
+	/** Plural checker: Permission tracker that disregards concurrency */
 	public static final String PLURAL = "FractionalAnalysis";
 	
+	/** NIMBY checker: Permission tracker for AtomicPower! (Java + <b>atomic</b> blocks) */
 	public static final String NIMBY = "NIMBYChecker";
+	
+	/** Sync-or-Swim prerequisite checker */
+	public static final String SOS_PRE = "SyncChecker";
+	
+	/** Sync-or-Swim checker: Permission tracker for concurrent Java programs */
+	public static final String SOS = "SyncOrSwim";
 
 }
