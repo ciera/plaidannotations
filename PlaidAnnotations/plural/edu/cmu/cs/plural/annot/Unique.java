@@ -105,4 +105,16 @@ public @interface Unique {
 	 */
 	String[] ensures() default { };
 	
+	/**
+	 * True if this unique permission is just a unique permission to
+	 * the root node and not every node above the root node in the
+	 * state hierarchy. This flag should almost always be false. That
+	 * is a standard unique permission, in which the fraction function
+	 * has a '1' fraction to the root, the below fraction, and every
+	 * other node in the fraction function. When <code>justToRoot</code>
+	 * is true, the fraction function has a value '1' for the below
+	 * fraction and the root fraction, but NOT necessarily for any of
+	 * the nodes above the root in the hierarchy. 
+	 */
+	boolean justToRoot() default false;
 }
