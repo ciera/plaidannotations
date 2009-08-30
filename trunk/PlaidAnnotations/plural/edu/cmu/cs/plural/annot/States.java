@@ -39,21 +39,32 @@ import java.lang.annotation.Target;
  * that can optionally be named using the attribute {@link #dim()}.   
  * 
  * @author Kevin Bierhoff
- *
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface States {
 
-	/** The name of the state dimension being introduced. */
+	/** 
+	 * The name of the state dimension being introduced.
+	 * If not provided this declares an <i>anonymous</i> dimension
+	 * for which Plural will make up a random, unique name. 
+	 */
 	String dim() default "";
 	
-	/** List of state names being introduced as mutually exclusive. */
-	String[] value();
+	/** 
+	 * List of state names being introduced as mutually exclusive
+	 * (empty by default).
+	 * By leaving this list empty you create a state dimension with
+	 * no states in it, which is helpful to keep "data" without a protocol.
+	 */
+	String[] value() default { };
 	
-	/** Existing state being refined. */
+	/** Existing state being refined (defaults to <i>alive</i>). */
 	String refined() default "alive";
 	
-	/** If this attribute is <code>true</code> then objects won't change state in this dimension. */
+	/** 
+	 * If this attribute is <code>true</code> then objects won't 
+	 * change state in this dimension (<code>false</code> by default). 
+	 */
 	boolean marker() default false;
 }
