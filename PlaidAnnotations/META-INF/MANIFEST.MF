@@ -4,6 +4,7 @@ Bundle-Name: PlaidAnnotations
 Bundle-SymbolicName: edu.cmu.cs.planno;singleton:=true
 Bundle-Version: 1.0.5
 Export-Package: edu.cmu.cs.crystal.annotations,
+ edu.cmu.cs.fusion.annot,
  edu.cmu.cs.plural.annot
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Require-Bundle: org.eclipse.jdt.core;bundle-version="3.4.2",
