@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?metadataRepository class='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1.0.0'?>
-<repository name='file:/C:/Users/nbeckman/workspace-plural/PlaidAnnotationsUpdateSite/ - metadata' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
+<repository name='Plural Annotations - metadata' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
   <properties size='2'>
     <property name='p2.compressed' value='false'/>
     <property name='p2.timestamp' value='1256266097906'/>
