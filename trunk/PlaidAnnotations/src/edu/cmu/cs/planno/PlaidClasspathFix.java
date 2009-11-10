@@ -69,12 +69,13 @@ public class PlaidClasspathFix extends ClasspathFixProcessor {
 	static {
 		String[] plaid_names = 
 		{ 
-				"Capture", "Cases", "ClassStates", "FalseIndicates",
-				"Full", "Fulls", "Imm", "Imms", "IsResult", "Lend",
-				"NoEffects","NonReentrant","Param","Perm","Pures","Pure",
-				"Range","Refine","Release","ResultFull","ResultImm","ResultShare",
-				"ResultUnique","Share","Shares","State","States","TrueIndicates",
-				"Unique","Uniques" 
+				"Capture", "Cases", "ClassStates", "Exact", "FalseIndicates",
+				"ForcePack", "Full", "Fulls", "Imm", "Imms", "In", "IsResult", "Lend",
+				"NoEffects","NonReentrant","Param","Perm","PolyVar","Pures","Pure",
+				"Range","Refine","Release","ResultFull","ResultImm",
+				"ResultPolyVar","ResultPure","ResultShare",
+				"ResultUnique","Share","Shares", "Similar", "State","States", "Symmetric",
+				"TrueIndicates", "Unique","Uniques", "Use" 
 		};
 		
 		String[] crystal_names =
