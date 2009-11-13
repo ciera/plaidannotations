@@ -69,18 +69,18 @@ public class PlaidClasspathFix extends ClasspathFixProcessor {
 	static {
 		String[] plaid_names = 
 		{ 
-				"Capture", "Cases", "ClassStates", "Exact", "FalseIndicates",
-				"ForcePack", "Full", "Fulls", "Imm", "Imms", "In", "IsResult", "Lend",
-				"NoEffects","NonReentrant","Param","Perm","PolyVar","Pures","Pure",
-				"Range","Refine","Release","ResultFull","ResultImm",
-				"ResultPolyVar","ResultPure","ResultShare",
-				"ResultUnique","Share","Shares", "Similar", "State","States", "Symmetric",
-				"TrueIndicates", "Unique","Uniques", "Use" 
+			"Apply", "ApplyToSuper", "Capture", "Cases", "ClassStates", "Exact", 
+			"FalseIndicates", "ForcePack", "Full", "Fulls", "Imm", "Imms", "In",
+			"IsResult", "Lend", "NoEffects","NonReentrant","Param","Perm","PolyVar",
+			"Pures","Pure", "Range","Refine","Release","ResultApply", "ResultFull",
+			"ResultImm", "ResultPolyVar","ResultPure","ResultShare",
+			"ResultUnique","Share","Shares", "Similar", "State","States", "Symmetric",
+			"TrueIndicates", "Unique","Uniques", "Use" 
 		};
 		
 		String[] crystal_names =
 		{
-				"FailingTest","MultiAnnotation","PassingTest","UseAnalyses"
+			"FailingTest","MultiAnnotation","PassingTest","UseAnalyses"
 		};
 		
 		PLURAL_CLASS_NAMES = new HashSet<String>();
