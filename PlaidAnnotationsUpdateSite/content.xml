@@ -3,9 +3,9 @@
 <repository name='${p2.metadata.repo.name}' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1.0.0'>
   <properties size='2'>
     <property name='p2.compressed' value='false'/>
-    <property name='p2.timestamp' value='1264719398104'/>
+    <property name='p2.timestamp' value='1264720682386'/>
   </properties>
-  <units size='23'>
+  <units size='24'>
     <unit id='PlaidAnnotations.feature.group' version='1.0.5' singleton='false'>
       <update id='PlaidAnnotations.feature.group' range='[0.0.0,1.0.5)' severity='0'/>
       <properties size='5'>
@@ -546,36 +546,6 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='PlaidAnnotations.feature.group' version='1.0.2' singleton='false'>
-      <update id='PlaidAnnotations.feature.group' range='[0.0.0,1.0.2)' severity='0'/>
-      <properties size='5'>
-        <property name='org.eclipse.equinox.p2.name' value='PlaidAnnotations'/>
-        <property name='org.eclipse.equinox.p2.description' value='This feature contains the Plaid Java annotations which are necessary for several of the Plaid group&apos;s static analyses.'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='http://code.google.com/p/plaidannotations/'/>
-        <property name='org.eclipse.equinox.p2.provider' value='The Plaid Group'/>
-        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
-      </properties>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='PlaidAnnotations.feature.group' version='1.0.2'/>
-      </provides>
-      <requires size='2'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='edu.cmu.cs.planno' range='[1.0.2,1.0.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='PlaidAnnotations.feature.jar' range='[1.0.2,1.0.2]'>
-          <filter>
-            (org.eclipse.update.install.features=true)
-          </filter>
-        </required>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
-      <licenses size='1'>
-        <license>
-          Copyright (c) 2006-2008 by Carnegie Mellon University and others.&#xA;All rights reserved.&#xA;Redistribution and use in source and binary forms, with or without&#xA;modification, are permitted provided that the following conditions&#xA;are met:&#xA;1. Redistributions of source code must retain the above copyright&#xA;notice, this list of conditions and the following disclaimer.&#xA;2. Redistributions in binary form must reproduce the above copyright&#xA;notice, this list of conditions and the following disclaimer&#xA;in the&#xA;documentation and/or other materials provided with the distribution.&#xA;3. Neither the names of the authors nor the&#xA;names of its contributors may be used to endorse or promote products&#xA;derived from this software without specific prior written permission.&#xA;THIS SOFTWARE IS PROVIDED BY THE AUTHORS &apos;&apos;AS IS&apos;&apos; AND ANY&#xA;EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,&#xA;THE IMPLIED&#xA;WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE&#xA;ARE&#xA;DISCLAIMED. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY&#xA;DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL&#xA;DAMAGES&#xA;INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS&#xA;OR SERVICES;&#xA;LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER&#xA;CAUSED AND&#xA;ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,&#xA;OR TORT&#xA;(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF&#xA;THE USE OF THIS&#xA;SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-        </license>
-      </licenses>
-      <copyright>
-        Copyright (c) 2006-2008 by Carnegie Mellon University and others.
-      </copyright>
-    </unit>
     <unit id='PlaidAnnotations.feature.jar' version='1.0.3'>
       <update id='PlaidAnnotations.feature.jar' range='[0.0.0,1.0.3)' severity='0'/>
       <properties size='4'>
@@ -603,6 +573,36 @@
           </instruction>
         </instructions>
       </touchpointData>
+      <licenses size='1'>
+        <license>
+          Copyright (c) 2006-2008 by Carnegie Mellon University and others.&#xA;All rights reserved.&#xA;Redistribution and use in source and binary forms, with or without&#xA;modification, are permitted provided that the following conditions&#xA;are met:&#xA;1. Redistributions of source code must retain the above copyright&#xA;notice, this list of conditions and the following disclaimer.&#xA;2. Redistributions in binary form must reproduce the above copyright&#xA;notice, this list of conditions and the following disclaimer&#xA;in the&#xA;documentation and/or other materials provided with the distribution.&#xA;3. Neither the names of the authors nor the&#xA;names of its contributors may be used to endorse or promote products&#xA;derived from this software without specific prior written permission.&#xA;THIS SOFTWARE IS PROVIDED BY THE AUTHORS &apos;&apos;AS IS&apos;&apos; AND ANY&#xA;EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,&#xA;THE IMPLIED&#xA;WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE&#xA;ARE&#xA;DISCLAIMED. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY&#xA;DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL&#xA;DAMAGES&#xA;INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS&#xA;OR SERVICES;&#xA;LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER&#xA;CAUSED AND&#xA;ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,&#xA;OR TORT&#xA;(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF&#xA;THE USE OF THIS&#xA;SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        </license>
+      </licenses>
+      <copyright>
+        Copyright (c) 2006-2008 by Carnegie Mellon University and others.
+      </copyright>
+    </unit>
+    <unit id='PlaidAnnotations.feature.group' version='1.0.2' singleton='false'>
+      <update id='PlaidAnnotations.feature.group' range='[0.0.0,1.0.2)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='PlaidAnnotations'/>
+        <property name='org.eclipse.equinox.p2.description' value='This feature contains the Plaid Java annotations which are necessary for several of the Plaid group&apos;s static analyses.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://code.google.com/p/plaidannotations/'/>
+        <property name='org.eclipse.equinox.p2.provider' value='The Plaid Group'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='PlaidAnnotations.feature.group' version='1.0.2'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='edu.cmu.cs.planno' range='[1.0.2,1.0.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='PlaidAnnotations.feature.jar' range='[1.0.2,1.0.2]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
       <licenses size='1'>
         <license>
           Copyright (c) 2006-2008 by Carnegie Mellon University and others.&#xA;All rights reserved.&#xA;Redistribution and use in source and binary forms, with or without&#xA;modification, are permitted provided that the following conditions&#xA;are met:&#xA;1. Redistributions of source code must retain the above copyright&#xA;notice, this list of conditions and the following disclaimer.&#xA;2. Redistributions in binary form must reproduce the above copyright&#xA;notice, this list of conditions and the following disclaimer&#xA;in the&#xA;documentation and/or other materials provided with the distribution.&#xA;3. Neither the names of the authors nor the&#xA;names of its contributors may be used to endorse or promote products&#xA;derived from this software without specific prior written permission.&#xA;THIS SOFTWARE IS PROVIDED BY THE AUTHORS &apos;&apos;AS IS&apos;&apos; AND ANY&#xA;EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,&#xA;THE IMPLIED&#xA;WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE&#xA;ARE&#xA;DISCLAIMED. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY&#xA;DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL&#xA;DAMAGES&#xA;INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS&#xA;OR SERVICES;&#xA;LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER&#xA;CAUSED AND&#xA;ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,&#xA;OR TORT&#xA;(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF&#xA;THE USE OF THIS&#xA;SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
@@ -650,6 +650,20 @@
         </instructions>
       </touchpointData>
     </unit>
+    <unit id='Annotations' version='0.0.0.20100128181801'>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='Annotations'/>
+        <property name='org.eclipse.equinox.p2.description' value='Java annotations'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='Annotations' version='0.0.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='PlaidAnnotations.feature.group' range='[1.0.7,1.0.7]'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+    </unit>
     <unit id='tooling.source.default' version='1.0.0' singleton='false'>
       <hostRequirements size='1'>
         <required namespace='org.eclipse.equinox.p2.eclipse.type' name='source' range='0.0.0' optional='true' multiple='true' greedy='false'/>
@@ -675,36 +689,6 @@
           </instruction>
         </instructions>
       </touchpointData>
-    </unit>
-    <unit id='PlaidAnnotations.feature.group' version='1.0.7' singleton='false'>
-      <update id='PlaidAnnotations.feature.group' range='[0.0.0,1.0.7)' severity='0'/>
-      <properties size='5'>
-        <property name='org.eclipse.equinox.p2.name' value='PlaidAnnotations'/>
-        <property name='org.eclipse.equinox.p2.description' value='This feature contains the Plaid Java annotations which are necessary for several of the Plaid group&apos;s static analyses.'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='http://code.google.com/p/plaidannotations/'/>
-        <property name='org.eclipse.equinox.p2.provider' value='The Plaid Group'/>
-        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
-      </properties>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='PlaidAnnotations.feature.group' version='1.0.7'/>
-      </provides>
-      <requires size='2'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='edu.cmu.cs.planno' range='[1.0.7,1.0.7]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='PlaidAnnotations.feature.jar' range='[1.0.7,1.0.7]'>
-          <filter>
-            (org.eclipse.update.install.features=true)
-          </filter>
-        </required>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
-      <licenses size='1'>
-        <license>
-          Copyright (c) 2006-2008 by Carnegie Mellon University and others.&#xA;All rights reserved.&#xA;Redistribution and use in source and binary forms, with or without&#xA;modification, are permitted provided that the following conditions&#xA;are met:&#xA;1. Redistributions of source code must retain the above copyright&#xA;notice, this list of conditions and the following disclaimer.&#xA;2. Redistributions in binary form must reproduce the above copyright&#xA;notice, this list of conditions and the following disclaimer&#xA;in the&#xA;documentation and/or other materials provided with the distribution.&#xA;3. Neither the names of the authors nor the&#xA;names of its contributors may be used to endorse or promote products&#xA;derived from this software without specific prior written permission.&#xA;THIS SOFTWARE IS PROVIDED BY THE AUTHORS &apos;&apos;AS IS&apos;&apos; AND ANY&#xA;EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,&#xA;THE IMPLIED&#xA;WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE&#xA;ARE&#xA;DISCLAIMED. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY&#xA;DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL&#xA;DAMAGES&#xA;INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS&#xA;OR SERVICES;&#xA;LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER&#xA;CAUSED AND&#xA;ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,&#xA;OR TORT&#xA;(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF&#xA;THE USE OF THIS&#xA;SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-        </license>
-      </licenses>
-      <copyright>
-        Copyright (c) 2006-2008 by Carnegie Mellon University and others.
-      </copyright>
     </unit>
     <unit id='PlaidAnnotations.feature.jar' version='1.0.4'>
       <update id='PlaidAnnotations.feature.jar' range='[0.0.0,1.0.4)' severity='0'/>
@@ -742,27 +726,35 @@
         Copyright (c) 2006-2008 by Carnegie Mellon University and others.
       </copyright>
     </unit>
-    <unit id='config.a.jre' version='1.6.0' singleton='false'>
-      <hostRequirements size='1'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='a.jre' range='1.6.0'/>
-      </hostRequirements>
-      <properties size='1'>
-        <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
+    <unit id='PlaidAnnotations.feature.group' version='1.0.7' singleton='false'>
+      <update id='PlaidAnnotations.feature.group' range='[0.0.0,1.0.7)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='PlaidAnnotations'/>
+        <property name='org.eclipse.equinox.p2.description' value='This feature contains the Plaid Java annotations which are necessary for several of the Plaid group&apos;s static analyses.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://code.google.com/p/plaidannotations/'/>
+        <property name='org.eclipse.equinox.p2.provider' value='The Plaid Group'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
       </properties>
       <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='config.a.jre' version='1.6.0'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='PlaidAnnotations.feature.group' version='1.0.7'/>
       </provides>
-      <requires size='1'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='a.jre' range='1.6.0'/>
+      <requires size='2'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='edu.cmu.cs.planno' range='[1.0.7,1.0.7]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='PlaidAnnotations.feature.jar' range='[1.0.7,1.0.7]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
       </requires>
-      <touchpoint id='org.eclipse.equinox.p2.native' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='install'>
-
-          </instruction>
-        </instructions>
-      </touchpointData>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license>
+          Copyright (c) 2006-2008 by Carnegie Mellon University and others.&#xA;All rights reserved.&#xA;Redistribution and use in source and binary forms, with or without&#xA;modification, are permitted provided that the following conditions&#xA;are met:&#xA;1. Redistributions of source code must retain the above copyright&#xA;notice, this list of conditions and the following disclaimer.&#xA;2. Redistributions in binary form must reproduce the above copyright&#xA;notice, this list of conditions and the following disclaimer&#xA;in the&#xA;documentation and/or other materials provided with the distribution.&#xA;3. Neither the names of the authors nor the&#xA;names of its contributors may be used to endorse or promote products&#xA;derived from this software without specific prior written permission.&#xA;THIS SOFTWARE IS PROVIDED BY THE AUTHORS &apos;&apos;AS IS&apos;&apos; AND ANY&#xA;EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,&#xA;THE IMPLIED&#xA;WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE&#xA;ARE&#xA;DISCLAIMED. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY&#xA;DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL&#xA;DAMAGES&#xA;INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS&#xA;OR SERVICES;&#xA;LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER&#xA;CAUSED AND&#xA;ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,&#xA;OR TORT&#xA;(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF&#xA;THE USE OF THIS&#xA;SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        </license>
+      </licenses>
+      <copyright>
+        Copyright (c) 2006-2008 by Carnegie Mellon University and others.
+      </copyright>
     </unit>
     <unit id='tooling.osgi.bundle.default' version='1.0.0' singleton='false'>
       <hostRequirements size='1'>
@@ -792,6 +784,28 @@
           </instruction>
           <instruction key='configure'>
             setStartLevel(startLevel:4);
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='config.a.jre' version='1.6.0' singleton='false'>
+      <hostRequirements size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='a.jre' range='1.6.0'/>
+      </hostRequirements>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='config.a.jre' version='1.6.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='a.jre' range='1.6.0'/>
+      </requires>
+      <touchpoint id='org.eclipse.equinox.p2.native' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='install'>
+
           </instruction>
         </instructions>
       </touchpointData>
