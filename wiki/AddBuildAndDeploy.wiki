@@ -7,6 +7,7 @@
   # Create the jar file. In PlaidAnnotations:
     # Export to jar file
     # Include the source of all annotations. Not the src directory though.
+    # Save as over the existing "plaid-annotations.jar"
   # In PlaidAnnotations/plugin.xml, do the following:
     # Increment the version number.
     # If you have added a new package, add it to the list of exported packages
