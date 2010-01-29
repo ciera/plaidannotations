@@ -1,0 +1,18 @@
+#summary Developer notes on adding annotations, building, and deploying
+#labels Phase-Implementation,Phase-Deploy
+
+= How to add a new annotation =
+  # Checkout all three projects: PlaidAnnotations, PlaidFeature, and PlaidAnnotationsUpdateSite
+  # Add the annotation in the appropriate package. Make a new package for your project if one isn't already there.
+  # In PlaidAnnotations/plugin.xml, do the following:
+    # Increment the version number.
+    # If you have added a new package, add it to the list of exported packages
+    # If you have added a new source directory, select it in the "binary build"
+  # In PlaidAnnotationsFeature/feature.xml, increment the version number to match
+  # In PlaidAnnotationsUpdateSite/site.xml
+   # Select the existing feature (under Annotations), right click, and remove it.
+   #Select "Annotations, click "Add Feature.." and add the one with the new version number.
+   # Click "Build All".
+  # Commit, update from the update site, and make sure it worked!
+
+And if you screw up, you MUST increment the version number again!
