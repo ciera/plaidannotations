@@ -2,7 +2,7 @@
 <feature
       id="PlaidAnnotations"
       label="PlaidAnnotations"
-      version="1.0.7"
+      version="1.0.8"
       provider-name="The Plaid Group">
 
    <description url="http://code.google.com/p/plaidannotations/">
