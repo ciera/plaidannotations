@@ -4,6 +4,9 @@
 = How to add a new annotation =
   # Checkout all three projects: PlaidAnnotations, PlaidFeature, and PlaidAnnotationsUpdateSite
   # Add the annotation in the appropriate package. Make a new package for your project if one isn't already there.
+  # Create the jar file. In PlaidAnnotations:
+    # Export to jar file
+    # Include the source of all annotations. Not the src directory though.
   # In PlaidAnnotations/plugin.xml, do the following:
     # Increment the version number.
     # If you have added a new package, add it to the list of exported packages
