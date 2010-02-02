@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/PlaidAnnotations_1.1.0.jar" id="PlaidAnnotations" version="1.1.0">
+   <feature url="features/PlaidAnnotations_1.1.1.jar" id="PlaidAnnotations" version="1.1.1">
       <category name="Annotations"/>
    </feature>
    <category-def name="Annotations" label="Annotations">
