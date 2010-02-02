@@ -3,14 +3,14 @@
 <repository name='${p2.artifact.repo.name}' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
   <properties size='2'>
     <property name='p2.compressed' value='false'/>
-    <property name='p2.timestamp' value='1264783535080'/>
+    <property name='p2.timestamp' value='1265145619534'/>
   </properties>
   <mappings size='3'>
     <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
     <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
     <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
   </mappings>
-  <artifacts size='18'>
+  <artifacts size='20'>
     <artifact classifier='osgi.bundle' id='edu.cmu.cs.planno' version='1.0.5'>
       <properties size='3'>
         <property name='artifact.size' value='395903'/>
@@ -74,6 +74,12 @@
         <property name='download.size' value='428008'/>
       </properties>
     </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='PlaidAnnotations' version='1.1.1'>
+      <properties size='2'>
+        <property name='download.contentType' value='application/zip'/>
+        <property name='download.size' value='1221'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='edu.cmu.cs.planno' version='1.0.9'>
       <properties size='2'>
         <property name='artifact.size' value='782'/>
@@ -92,11 +98,10 @@
         <property name='download.size' value='398384'/>
       </properties>
     </artifact>
-    <artifact classifier='osgi.bundle' id='edu.cmu.cs.planno' version='1.0.6'>
-      <properties size='3'>
-        <property name='artifact.size' value='545614'/>
-        <property name='download.size' value='545614'/>
-        <property name='download.contentType' value='application/zip'/>
+    <artifact classifier='osgi.bundle' id='edu.cmu.cs.planno' version='1.1.1'>
+      <properties size='2'>
+        <property name='artifact.size' value='782'/>
+        <property name='download.size' value='398385'/>
       </properties>
     </artifact>
     <artifact classifier='org.eclipse.update.feature' id='PlaidAnnotations' version='1.0.2'>
@@ -105,11 +110,17 @@
         <property name='download.size' value='1522'/>
       </properties>
     </artifact>
-    <artifact classifier='osgi.bundle' id='edu.cmu.cs.planno' version='1.0.2'>
+    <artifact classifier='osgi.bundle' id='edu.cmu.cs.planno' version='1.0.6'>
       <properties size='3'>
-        <property name='artifact.size' value='466710'/>
-        <property name='download.size' value='466710'/>
+        <property name='artifact.size' value='545614'/>
+        <property name='download.size' value='545614'/>
         <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.cmu.cs.planno' version='1.0.7'>
+      <properties size='2'>
+        <property name='artifact.size' value='782'/>
+        <property name='download.size' value='584854'/>
       </properties>
     </artifact>
     <artifact classifier='org.eclipse.update.feature' id='PlaidAnnotations' version='1.0.5'>
@@ -118,10 +129,11 @@
         <property name='download.size' value='1519'/>
       </properties>
     </artifact>
-    <artifact classifier='osgi.bundle' id='edu.cmu.cs.planno' version='1.0.7'>
-      <properties size='2'>
-        <property name='artifact.size' value='782'/>
-        <property name='download.size' value='584854'/>
+    <artifact classifier='osgi.bundle' id='edu.cmu.cs.planno' version='1.0.2'>
+      <properties size='3'>
+        <property name='artifact.size' value='466710'/>
+        <property name='download.size' value='466710'/>
+        <property name='download.contentType' value='application/zip'/>
       </properties>
     </artifact>
   </artifacts>
