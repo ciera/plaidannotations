@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: PlaidAnnotations
 Bundle-SymbolicName: edu.cmu.cs.planno;singleton:=true
-Bundle-Version: 1.1.1
+Bundle-Version: 1.1.2
 Export-Package: edu.cmu.cs.crystal.annotations,
  edu.cmu.cs.fusion.annot,
  edu.cmu.cs.plural.annot
