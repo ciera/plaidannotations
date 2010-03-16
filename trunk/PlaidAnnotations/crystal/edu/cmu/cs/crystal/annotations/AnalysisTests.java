@@ -30,6 +30,7 @@ import java.lang.annotation.RetentionPolicy;
  * @author Nels E. Beckman
  */
 @Retention(RetentionPolicy.RUNTIME)
-public @interface PassingTest {
-	String analysis() default "";
+public @interface AnalysisTests {
+	FailingTest[] fail() default {};
+	PassingTest[] pass() default {};
 }

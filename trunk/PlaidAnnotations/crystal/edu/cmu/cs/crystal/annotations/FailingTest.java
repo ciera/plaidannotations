@@ -40,4 +40,5 @@ public @interface FailingTest {
 	 * greater than 0.
 	 */
 	int value() default 0;
+	String analysis() default "";
 }
