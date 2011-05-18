@@ -43,5 +43,5 @@ public @interface Constraint {
 	public String trigger() default "true";
 	public String restrictTo() default "true";	
 	public String requires() default "true";	
-	public String[] effects();
+	public String[] effects() default {};
 }
